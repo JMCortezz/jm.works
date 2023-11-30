@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JM Works</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+
+   <!-- Messenger Chat Plugin Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Chat Plugin code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+
+   <script>
+     var chatbox = document.getElementById('fb-customer-chat');
+     chatbox.setAttribute("page_id", "106312601670993");
+     chatbox.setAttribute("attribution", "biz_inbox");
+   </script>
+
+   <!-- Your SDK code -->
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v18.0'
+       });
+     };
+
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="/img/logo.png" alt="logo">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-white"><i class="fa-solid fa-bars-staggered"></i></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#home"><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#works" id="nav-works">WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#about" id="nav-about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#skills" id="nav-skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#workflow" id="nav-workflow">WORKFLOW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-3 fw-bold" href="#contact" id="nav-contact">CONTACT</a>
+                </li>
+            </ul>
+                 
+          <div class="soc-med d-flex justify-content-center">
+            <a class="nav-link m-2 fw-bold" href="https://www.facebook.com/jm.cortez.52012" target="_blank" id="nav-contact"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="nav-link m-2 fw-bold" href="https://www.instagram.com/jm.works_/" target="_blank" id="nav-contact"><i class="fa-brands fa-instagram"></i></a>
+            <a class="nav-link m-2 fw-bold" href="https://www.behance.net/johnmecortez" target="_blank" id="nav-contact"><i class="fa-brands fa-square-behance"></i></a>
+            <a class="nav-link m-2 fw-bold" href="https://www.linkedin.com/in/john-merwin-cortez-951738265/" target="_blank" id="nav-contact"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="nav-link m-2 fw-bold" href="https://github.com/JMCortezz" target="_blank" id="nav-contact"><i class="fa-brands fa-github"></i></a>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+       <!-- HERO -->
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row" id="hero__row">
+                <div class="col-lg-7 mx-auto text-center text-white">
+                    <p class="intro__text mt-3 fw-bold">I am</p>
+                    <h1 class="hero__h1 text-white" id="hero-h1">John Merwin Cortez</h1>
+                    <h3 class="hero__h3" id="hero-h3">A self-taught Web Designer</h3>
+                    <h4 class="hero__h4 text-white my-3" id="hero__h4"><span class="auto-type"></span></h4>
+                    <p class="hero-text mt-3 text-white">Let me help you with your project.</p>
+                    <a href="mailto:johnmerwincortez@gmail.com" class="btn fw-bold text-white m-1" id="hero-btn">LET'S CONNECT</a>
+                    <a href="#works" class="btn btn-primary fw-bold text-white m-1" id="hero-btn">MY WORKS <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORKS -->
+    <section id="works" class="container mt-3 section-2 plain-section">
+      <div class="work__section text-center">
+          <p class="work__text text-dark" id="work__text">-what i do</p>
+          <h5 class="work__5" id="work__5">My Personal Projects<br>that I Worked With</h5>
+          <p class="work__text my-3 text-dark" id="work__text">Tools that I use:</p>
+          <img src="/img/figma-logo.png" class="img-fluid" alt="figma-logo" id="figma__logo">
+          <img src="/img/adobe-ps.png" class="img-fluid" alt="adobe-logo" id="adobe__logo">
+          
+          <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons">
+                        <button class="btn btn-dark fw-bold mb-2" data-category="all">ALL</button>
+                        <button class="btn btn-dark fw-bold mb-2" data-category="web-design">WEB DESIGN</button>
+                        <button class="btn btn-dark fw-bold mb-2" data-category="web-development">WEB DEVELOPMENT</button>
+                        <button class="btn btn-dark fw-bold mb-2" data-category="advertisement-designs">ADVERTISEMENT DESIGNS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          </div>
+      </div>
+
+      <div class="container mt-4">
+          <div class="row g-4">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;"  data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-1.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Arctic Travels</h5>
+                          <p class="card-text">Designed travel site during 3rd year BSIT, pursuing design on the future.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116515/Travel-Landing-Page" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item"  style="max-width: 20rem;" data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-2.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Smooth Brew</h5>
+                          <p class="card-text">I also created a coffee website design for fun and practice as well.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185115765/Coffee-Landing-Page" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-3.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Spawn Art</h5>
+                          <p class="card-text">This is my first website design, I really love NFT's wayback year 2022.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116333/NFT-Landing-Page" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-4.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Fitness Cube</h5>
+                          <p class="card-text">When I started going to gym, I decided to create this design wayback december 2022.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116041/Fitness-Landing-Page" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-5.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Pro Bono Client</h5>
+                          <p class="card-text">I created a personal portfolio for my classmate in exchange for feedback!</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185310211/Pro-Bono-Client-1" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-design">
+                      <div class="inner">
+                          <img src="/img/web-design-6.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Personal Portfolio</h5>
+                          <p class="card-text">Second try on designing my own portfolio website, this is on our sub web dev.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185328813/Personal-Portfolio-UI" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- WEB DEVELOPMENT -->
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-1.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Tindog</h5>
+                          <p class="card-text">This is our activity on web development—our first lesson on bootstrapping!</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/tindog/" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-2.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">GNC Office of Student Affairs Portal</h5>
+                          <p class="card-text">Part of our capstone project took a month to complete.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/gncosa/index.html" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-3.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Stages international</h5>
+                          <p class="card-text">We created this on our midterm exam, and I learned a lot from it.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/stages-international/" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-4.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Rock, Paper, Scissors</h5>
+                          <p class="card-text">We developed this wayback in 2022, not that good with Javascript.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/RSP/" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-5.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Dice</h5>
+                          <p class="card-text">On this one as well, I struggled a lot with Javascript, this is also wayback 2022.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/DICE/" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-6.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Hair Day</h5>
+                          <p class="card-text">We used HTML and CSS on this one; responsiveness is our main goal on this.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://jmcortezz.github.io/hairday/" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="web-development">
+                      <div class="inner">
+                          <img src="/img/web-dev-7.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Record Management System</h5>
+                          <p class="card-text">Our capstone project for the office of student affairs of Guagua National Colleges.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="http://gncosarms.infinityfreeapp.com/login.php" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- AD DESIGNS -->
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-1.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">IAMS Dogfood</h5>
+                          <p class="card-text">Spotted a dog on Facebook, inspired me to create dog food design.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-2.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Formal Attire</h5>
+                          <p class="card-text">Making an eye-catching advertisement for formal attire has been so much fun!</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-3.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Elderly Homes</h5>
+                          <p class="card-text">I saw content about elders with nowhere to go and decided to design about it.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-4.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Photography</h5>
+                          <p class="card-text">I designed this one in my free time, to gain more experience in design.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-5.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Shein</h5>
+                          <p class="card-text">I'm seeing a lot of models on Instagram, so this comes to mind.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-6.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Avon</h5>
+                          <p class="card-text">I'm curious about the full-face design cover, so I tried this one, and it turned out well.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-7.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">MageGee Keyboard</h5>
+                          <p class="card-text">This is my first mechanical keyboard; I decided to design it and this is the result.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card text-center border shadow filter-item" style="max-width: 20rem;" data-category="advertisement-designs">
+                      <div class="inner">
+                          <img src="/img/ad-design-8.png" class="card-img-top inner" alt="...">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Vans Old Skool</h5>
+                          <p class="card-text">This is my first ad design on New Year's Eve, I really love Vans.</p>
+                      </div>
+                      <div class="card-body text-center fw-bold">
+                          <a href="https://www.behance.net/gallery/185116741/Advertisements-Design" target="_blank" class="card-link"><i class="fa-solid fa-link fw-bold"></i> Preview</a>
+                      </div>
+                  </div>
+              </div>             
+
+              
+          </div>
+      </div>
+  </section>
+
+     <!--  ABOUT -->
+     <section class="section-3 m-5" id="about">
+      <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col d-flex justify-content-center">
+                <div class="img-card mt-5">
+                  <div class="card-socials">
+                    <a href="https://www.facebook.com/jm.cortez.52012" target="_blank" class="card-socials-btn facebook">
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" data-name="Layer 21"><title></title><path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"></path></svg>
+                    </a>
+                    
+                    <a href="https://github.com/JMCortezz" target="_blank" class="card-socials-btn github">
+                      <svg viewBox="0 0 24 24" height="33" width="33" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/john-merwin-cortez-951738265/" target="_blank" class="card-socials-btn linkedin">
+                      <svg height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"></path></svg>
+                    </a>
+
+                  </div>
+              </div>
+              </div>
+              <div class="col">
+                  <div class="panel text-center">
+                      <p class="about__text" id="about__text">-who i am</p>
+                      <h1 class="about__h5" id="about__h5">ABOUT ME</h1>
+                      <p class="pt-4">I'm John Merwin M. Cortez, a self-taught web designer from the Philippines. With nearly a year of experience, I have strength in creating visually appealing websites that engage potential customers and users.</p>
+                      <p>I intend to work on projects for local and international businesses and entrepreneurs. As a designer, my role is to listen to the client and create solutions that will satisfy them. I'm an aggressive learner who keeps up with design trends.</p>
+                      <a href="JM Cortez Resume.pdf" class="btn btn-primary m-2 fw-bold" id="abt-btn"download>DOWNLOAD CV</a>
+                      <a href="https://www.linkedin.com/in/john-merwin-cortez-951738265/" target="_blank" class="btn btn-primary m-2 fw-bold" id="abt-btn">CERTIFICATIONS</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<!-- SKILLS -->
+  <section class="skills m-5" id="skills">
+    <div class="container" id="service">
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <p class="services__text" id="services__text">-what I'm capable of</p>
+          <h5 class="services__h5" id="services__h5">MY SKILLS</h5>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-object-group"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="wireframing">Wireframing</h5>
+            <p class="service-text">I create mid-fidelity wireframes to plan site features and satisfy my clients and their users.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="visual-design">Visual Design</h5>
+            <p class="service-text">I craft modern designs, leveraging HTML, CSS, JS, and Bootstrap fundamentals effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="uiux-design">UI/UX Design</h5>
+            <p class="service-text">I craft easy-to-navigate website interfaces, aiding users in effortless navigation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="web-design">Web Design</h5>
+            <p class="service-text">I create effective designs for improved business, enhancing appeal and navigation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-rectangle-ad"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="socmed-design">Advertisement Designs</h5>
+            <p class="service-text">I create engaging ads, depending on the content, for business growth.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-6">
+          <div class="service card-effect shadow text-center p-4 rounded">
+            <div class="iconbox mx-auto">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h5 class="service__h5 mt-4 mb-2" id="web-dev">Web Development</h5>
+            <p class="service-text">I also excel at HTML, CSS, and Bootstrap and can work as a front-end developer.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <!-- WORKFLOW -->
+   <section class="workflow__section text-white m-5" id="workflow">
+    <div class="container text-center">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <p class="services__text" id="services__text">-how i work</p>
+                <h5 class="services__h5" id="services__h5">MY WORKFLOW</h5>
+            </div>
+        </div>
+        <div class="row g-3">
+
+          <div class="col-md-6 col-lg-4">
+              <div class="card  w-100 h-100 shadow">
+                  <div class="card-image-1 workflow card-effect"></div>
+                  <h5 class="card-title-work">Briefing</h5>
+                  <p class="card-body-work">
+                      I start by asking for lots of info about the project: goals, details, and concerns.
+                  </p>
+                </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+              <div class="card w-100 h-100 shadow">
+                  <div class="card-image-2 workflow card-effect"></div>
+                  <h5 class="card-title-work">Researching</h5>
+                  <p class="card-body-work">
+                      Researching follows, involving market analysis, competitive review, and visual comparisons for informed decision-making.
+                  </p>
+                </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+              <div class="card w-100 h-100 shadow">
+                  <div class="card-image-3 workflow card-effect"></div>
+                  <h5 class="card-title-work">Prototyping</h5>
+                  <p class="card-body-work">
+                      I use research to design project structures and explain how they work to clients.
+                  </p>
+                </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+              <div class="card w-100 h-100 shadow">
+                  <div class="card-image-4 workflow card-effect"></div>
+                  <h5 class="card-title-work">Design</h5>
+                  <p class="card-body-work">
+                      I pick styles, make designs, pick fonts/colors/icons, present drafts, and finalize approved designs.
+                  </p>
+                </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+              <div class="card w-100 h-100 shadow">
+                  <div class="card-image-5 workflow card-effect"></div>
+                  <h5 class="card-title-work">Adaptation</h5>
+                  <p class="card-body-work">
+                      I create adaptive versions for various electronic devices such as tablets and smartphone.
+                  </p>
+                </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+              <div class="card w-100 h-100 shadow">
+                  <div class="card-image-6 workflow card-effect"></div>
+                  <h5 class="card-title-work">Finalization</h5>
+                  <p class="card-body-work">
+                      I produce a Figma file, including a fully developed project, for transfer to the client.
+                  </p>
+                </div>
+          </div>
+  
+      </div>
+    </div>
+</section>
+
+   <!-- TESTIMONIALS SECTION -->
+   <section id="carousel" class="colored-section container-fluid bg-dark">
+    <div class="container">
+      <div class="text-center">
+        <div class="quotation text-start"><i class="fa-solid fa-quote-left fw-bold"></i></div>
+        <p class="testimonials-p">-my clients</p>
+        <h5 class="testimonial-header text-white">TESTIMONIALS</h5>
+      </div>
+    </div>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <img class="testimonial-img img-fluid rounded-circle m-3" src="/img/testomonial-img-1.jpg" alt="first slide">
+                <h3 id="client-1" class="text-white fw-bold m-3">Prince Justin Y. David</h3>
+                <em id="client-role" class="client-role fw-bold m-3">Web Developer</em>
+                <div class="testimonials-text m-3"><p class="text-white">"The design is very cool very impressive and I really like the color combination good quality good job thanks for the design."</p></div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img class="testimonial-img img-fluid rounded-circle m-3" src="/img/testomonial-img-1.jpg" alt="first slide">
+              <h3 id="client-1" class="text-white fw-bold m-3">Prince Justin Y. David</h3>
+              <em id="client-role" class="client-role fw-bold m-3">Web Developer</em>
+              <div class="testimonials-text m-3"><p class="text-white">"The design is very cool very impressive and I really like the color combination good quality good job thanks for the design."</p></div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon fw-bold" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<div class="spacing m-5"></div>
+<section id="contact" class="contact container-fluid">
+  <div class="text-center p-5 rounded">
+    <p class="contact-text text-dark">-my contact</p>
+<h1 class="contact-h1">DO YOU HAVE A PROJECT IN MIND?</h1>
+<a href="mailto:johnmerwincortez@gmail.com" class="btn fw-bold text-white m-1" id="hero-btn">LET'S COLLABORATE!</a>
+
+  </div>
+</section>
+  
+
+  <!-- FOOTER -->
+  <footer class="">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="ftr-text mb-0 mt-3 text-white text-center">© Copyright 2023 jm.works | JM Cortez Web Designer 😎</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons text-center my-2">
+                        <a href="https://www.behance.net/johnmecortez" target="_block"><i class="fa-brands fa-behance"></i></a><p class="socmed-text text-white mt-2 mx-2">Behance</p>
+                        <a href="https://www.facebook.com/jm.cortez.52012"target="_block"><i class="fa-brands fa-facebook"></i></a><p class="socmed-text text-white mt-2 mx-2">Facebook</p>
+                        <a href="https://www.instagram.com/jm.works_/"target="_block" ><i class="fa-brands fa-instagram"></i></a><p class="socmed-text text-white mt-2 mx-2">Instagram</p>
+                        <a href="https://www.linkedin.com/in/john-merwin-cortez-951738265/"target="_block" ><i class="fa-brands fa-linkedin"></i></a><p class="socmed-text text-white mt-2 mx-2">LinkedIn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="scrollBtn" onclick="topFunction()" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.filter-buttons button').on('click', function() {
+            const category = $(this).data('category');
+        
+            if (category === 'all') {
+              $('.filter-item').show(); // Show all items when 'All' is selected
+            } else {
+              $('.filter-item').hide(); // Hide all items
+              $(`.filter-item[data-category="${category}"]`).show(); // Show items belonging to selected category
+            }
+          });
+        });
+
+        // scroll to top button
+                window.onscroll = function() {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollBtn").style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["I design websites,","creating wireframes,","banner ad designs and experiences."],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        })
+    </script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</body>
+</html>
