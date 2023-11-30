@@ -27,7 +27,7 @@
 
 .hero__h1{
     font-family: 'Abril Fatface', serif;
-    background: url(./img/text-overlay.jpg) no-repeat;
+    background: url(text-overlay.jpg) no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -202,7 +202,7 @@ span{
    }
 
 #home {
-    background-image: url(./img/hero-bg.jpg);
+    background-image: url(hero-bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -376,42 +376,42 @@ span{
   
   .card-image-1 {
     min-height: 200px;
-    background-image: url(./img/workflow-1.jpg) ;
+    background-image: url(workflow-1.jpg) ;
     background-size: cover;
     border-radius: 5px;
 
   }
   .card-image-2 {
     min-height: 200px;
-    background-image: url(./img/workflow-2.webp) ;
+    background-image: url(workflow-2.webp) ;
     background-size: cover;
     border-radius: 5px;
 
   }
   .card-image-3 {
     min-height: 200px;
-    background-image: url(./img/workflow-3.jpg) ;
+    background-image: url(workflow-3.jpg) ;
     background-size: cover;
     border-radius: 5px;
 
   }
   .card-image-4 {
     min-height: 200px;
-    background-image: url(./img/workflow-4.jpg) ;
+    background-image: url(workflow-4.jpg) ;
     background-size: cover;
     border-radius: 5px;
 
   }
   .card-image-5 {
     min-height: 200px;
-    background-image: url(./img/workflow-5.webp) ;
+    background-image: url(workflow-5.webp) ;
     background-size: cover;
     border-radius: 5px;
 
   }
   .card-image-6 {
     min-height: 200px;
-    background-image: url(./img/workflow-6.webp) ;
+    background-image: url(workflow-6.webp) ;
     background-size: cover;
     border-radius: 5px;
 
